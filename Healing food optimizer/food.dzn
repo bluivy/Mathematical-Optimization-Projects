@@ -1,0 +1,25 @@
+MORA_BUDGET = 1000;
+MAX_PROCESSING_TIME = 30;
+
+
+
+
+DISH = {SWEET_MADAME, MONSTADT_HASHBROWN, MATSUSAKE,CHICKEN_MUSHROOM_SKEWER,GRILLED_TIGER_FISH,UNIVERSAL_PEACE,SQUIRREL_FISH,CRYSTAL_SHRIMP};
+
+/*COMPLEXITY = [0,2,0,0,1,2,0]*/
+HP=[1200,1250,900,800,1000,1250,1250,2340];
+PROCESSING_TIME = [0,30,0,0,0,0,9,0];
+ingredients_required = [|
+    2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0|
+    0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0|
+    0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0|
+    0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0|
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0|
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0|
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0|
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1|];
+/* only the cost for processing is taken; since having inventory indicates mora spent */
+COST = [0,270,0,0,0,0,150,0];
+/* inventory */
+raw_ingridients = {sweet_flower,fowl,pinecone,potato, sunsettia,berry,meat,matsusake,mushroom,fish, pepper,rice, lotus, carrot,tomato,wheat,shrimp};
+inventory = [51,207,103,122,2,53,473,158,103,117,6,10,123,179,185,51,130];
